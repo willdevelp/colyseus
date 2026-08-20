@@ -1,5 +1,5 @@
 export const MAIN_TRACK_LENGTH = 52;
-export const FINAL_PATH_LENGTH = 6;
+export const FINAL_PATH_LENGTH = 5;
 export const HOME_POSITION = -1;
 
 export const START_POSITION = 0;
