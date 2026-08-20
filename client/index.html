@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Client</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="panel">
+        <h1>Ludo</h1>
+
+        <div class="join-box">
+          <label>
+            Nom
+            <input id="playerName" type="text" value="Joueur" maxlength="20" />
+          </label>
+          <button id="joinBtn">Rejoindre la room</button>
+        </div>
+
+        <div class="actions">
+          <button id="readyBtn" disabled>Ready</button>
+          <button id="rollBtn" disabled>Lancer le dé</button>
+        </div>
+
+        <div class="status-box">
+          <p><strong>État :</strong> <span id="statusText">hors ligne</span></p>
+          <p><strong>Tour :</strong> <span id="turnText">-</span></p>
+          <p><strong>Dé :</strong> <span id="diceText">-</span></p>
+          <p><strong>Message :</strong> <span id="messageText">Connecte-toi pour jouer.</span></p>
+        </div>
+
+        <div class="players">
+          <h2>Joueurs</h2>
+          <ul id="playersList"></ul>
+        </div>
+      </aside>
+
+      <main class="board-wrap">
+        <div id="board" class="board"></div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
